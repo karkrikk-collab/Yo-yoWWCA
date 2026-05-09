@@ -1,5 +1,5 @@
 const CACHE = 'yoyo-v1';
-const PRECACHE = ['/Yo-yoWWCA/', '/Yo-yoWWCA/index.html'];
+const PRECACHE = ['/', '/index.html'];
 
 self.addEventListener('install', e =>
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(PRECACHE)))
